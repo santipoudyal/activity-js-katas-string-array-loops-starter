@@ -20,3 +20,27 @@
 */
 
 // YOUR CODE HERE
+
+
+let word = "MississippiislongesttheRiver"
+let letter ="s"
+let lettercount = 0;
+
+let index = 0;
+while (index < word.length) {
+   // console.log(index,word[index]);
+   if (letter === word[index]) {
+      // console.log(index);
+      lettercount = lettercount + 1;
+   }
+
+   index = index + 1
+}
+
+  if (lettercount > 0) {
+   console.log("The letter \"" + letter + "\" exist " + lettercount + "times in this word!");
+
+}
+else {
+   console.log("Nope, that letter doesn't exist in my word!");
+}
